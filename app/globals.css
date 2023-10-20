@@ -25,3 +25,12 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.home-main-text {
+  text-shadow: 1px 3px 7px BLACK;
+}
+
+.home-button {
+  background-color: #ECE5DD;
+  color: #2F4443;
+}
