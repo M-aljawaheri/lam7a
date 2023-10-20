@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+// TODO Fix the mobile view. It is not great at all.
 const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   return (

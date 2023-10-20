@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import RootLayout from '../layout'
 import Sidebar from './sidebar';
+import Slider from './slider';
 
 
 export default function Page() {
@@ -27,9 +28,11 @@ export default function Page() {
         </div>
 
 
-        <div className="flex-1 h-screen bg-customGreen">
-          {/* Content for second div */}
-          Test2
+        <div className="flex flex-col h-screen bg-customOrange">
+          <h4 className='text-white text-7xl text-center lg:mt-4'>Magazine Archive</h4>
+          <div className='mt-10 px-20'>
+            <Slider />
+          </div>
         </div>
 
         <div className="flex-1 h-screen bg-customBlue">
