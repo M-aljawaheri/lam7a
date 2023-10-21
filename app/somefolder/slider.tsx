@@ -1,6 +1,7 @@
 "use client";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Image from "next/image";
 
 const responsive = {
     desktop: {
@@ -19,7 +20,7 @@ const responsive = {
         slidesToSlide: 1 // optional, default to 1.
     },
     mobilethink: {
-        breakpoint: { max: 464, min: 390 },
+        breakpoint: { max: 464, min: 0 },
         items: 1,
         slidesToSlide: 1 // optional, default to 1.
     }
@@ -27,16 +28,16 @@ const responsive = {
 
 const sliderImageUrl = [
     {
-        url: "./journals/img132.jpg"
+        url: "/journals/img132.jpg"
     },
     {
-        url: "./journals/img133.jpg"
+        url: "/journals/img132.jpg"
     },
     {
-        url: "./journals/img134.jpg"
+        url: "/journals/img132.jpg"
     },
     {
-        url: "./journals/img135.jpg"
+        url: "/journals/img132.jpg"
     },
 ];
 
@@ -56,18 +57,18 @@ const Slider = () => {
                 dotListClass="custom-dot-list-style hidden"
             >
                 {sliderImageUrl.map((imageUrl, index) => {
-                    if (index == 0){
-                        return (
-                            <div className="slider m-3 mr-6" key={index}>
-                                {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img width={'100%'} src={imageUrl.url} alt="movie" />
-                            </div>
-                        );
-                    }
                     return (
-                        <div className="slider overflow-visible m-3" key={index}>
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img width={'100%'} src={imageUrl.url} alt="movie" />
+                        <div className="slider m-3 mr-6 px-4 py-6" key={index}>
+                            <a className="pt-2 cursor-pointer" href="https://google.com" target="_blank">
+                                <Image
+                                    className="hover:scale-[1.30] slider-image hover:z-50 hover:shadow-none"
+                                    src={imageUrl.url}
+                                    alt="Lam7a"
+                                    width={500}
+                                    height={700}
+                                    priority
+                                />
+                            </a>
                         </div>
                     );
                 })}

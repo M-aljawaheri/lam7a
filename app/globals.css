@@ -34,3 +34,35 @@ body {
   background-color: #ECE5DD;
   color: #2F4443;
 }
+
+.slider-image{
+  box-shadow: 6px 10px 34px -8px rgba(0,0,0,0.66);
+}
+
+.slider-image:hover{
+  box-shadow: none;
+}
+
+.view-more{
+  z-index: 100;
+  opacity: 0%;
+}
+
+.view-more-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
+  z-index: 2;
+  background-color: black;
+}
+
+.view-more-parent:hover .view-more{
+  opacity: 100%;
+}
+
+.view-more-parent:hover .view-more-overlay{
+  opacity: 30%;
+}
