@@ -12,7 +12,7 @@ export default function Page() {
         {/* <Sidebar /> */}
         <div className="h-screen bg-cover bg-center flex flex-col items-center justify-center" style={{ backgroundImage: 'url(/bg.jpg)' }}>
           <Image
-            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] mb-4 -mt-36"
+            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] mb-4 lg:-mt-36"
             src="/logo.webp"
             alt="Lam7a"
             width={948}
@@ -76,7 +76,7 @@ export default function Page() {
                 />
               <div className='view-more-overlay'></div>
               <div className="view-more absolute  cursor-pointer top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <a href='https://google.com' className="font-bold text-3xl">View More</a>
+                <a href='/gallery' className="font-bold text-3xl">View More</a>
               </div>
               </div>
             </div>
