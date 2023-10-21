@@ -6,11 +6,25 @@ export interface CustomImage extends Image {
 
 export const images: CustomImage[] = [
   {
-    src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-    original: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-    width: 320,
-    height: 200,
-    caption: "After Rain (Jeshu John - designerspics.com)",
+    src: "/pics/img139.jpg",
+    original: "/pics/img139.jpg",
+    width: 1210,
+    height: 1613,
+    caption: "",
+  },
+  {
+    src: "/pics/img138.jpg",
+    original: "/pics/img138.jpg",
+    width: 1815,
+    height: 2420,
+    caption: "",
+  },
+  {
+    src: "/pics/img140.jpg",
+    original: "/pics/img140.jpg",
+    width: 1210,
+    height: 1613,
+    caption: "",
   },
   {
     src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
