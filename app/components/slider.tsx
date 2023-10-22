@@ -47,7 +47,7 @@ const Slider = () => {
                         <div className="slider m-3 mr-6 px-4 py-6" key={index}>
                             <a className="pt-2 cursor-pointer" href={`/magazine/${item.link}`} target="_blank">
                                 <Image
-                                    className="hover:scale-[1.30] slider-image hover:z-50 hover:shadow-none"
+                                    className="hover:scale-[1.30] duration-300 slider-image hover:z-50 hover:shadow-none"
                                     src={item.image}
                                     alt="Lam7a"
                                     width={500}
