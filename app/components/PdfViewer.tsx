@@ -1,5 +1,5 @@
 "use client"
-import { MinimalButton, ScrollMode, SpecialZoomLevel, Viewer, ViewMode, Worker } from '@react-pdf-viewer/core';
+import { MinimalButton, ScrollMode, SpecialZoomLevel, Viewer, ViewMode, Worker, ProgressBar } from '@react-pdf-viewer/core';
 import { NextIcon, pageNavigationPlugin, PreviousIcon } from '@react-pdf-viewer/page-navigation';
 import { ThumbnailDirection, thumbnailPlugin } from '@react-pdf-viewer/thumbnail';
 import * as React from 'react';
@@ -54,6 +54,12 @@ const MagazineExample: React.FC<MagazineExampleProps> = ({ fileUrl }) => {
                         viewMode={ViewMode.DualPageWithCover}
                         fileUrl={fileUrl}
                         plugins={[pageNavigationPluginInstance, thumbnailPluginInstance]}
+                        renderLoader={(percentages: number) => (
+                            // You can use your own progress bar component
+                            <div style={{ width: '240px' }}>
+                                <ProgressBar progress={Math.round(percentages)} />
+                            </div>
+                        )}
                     />
                 </Worker>
                 <div
