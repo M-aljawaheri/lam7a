@@ -38,7 +38,7 @@ export default function Page() {
                 />
                 <div className='view-more-overlay'></div>
                 <div className="view-more absolute w-[100%] text-center cursor-pointer top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                  <a href='/gallery' className="font-bold text-3xl">View More</a>
+                  <a href='/gallery' className="font-bold text-3xl text-white">View More</a>
                 </div>
               </div>
             </div>
