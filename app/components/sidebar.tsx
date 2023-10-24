@@ -1,7 +1,12 @@
 import { useState } from "react";
 import Footer from "./footer";
 // TODO Fix the mobile view. It is not great at all.
-const Sidebar = () => {
+interface SidebarProps {
+  color?: string;
+}
+
+const Sidebar : React.FC<SidebarProps> = ({color}) => {
+  if (!color) color = 'white';
   const [showSidebar, setShowSidebar] = useState(false);
   const underline =
     <div className="opacity-0 group-hover:opacity-100 after:absolute after:-bottom-2 after:h-1 after:right-0 after:-z-10 after:h-2 after:w-full after:-translate-y-2 after:bg-white after:content-['']">
@@ -27,7 +32,7 @@ const Sidebar = () => {
         <svg
           onClick={() => setShowSidebar(!showSidebar)}
           className="fixed z-30 flex items-center cursor-pointer left-4 top-6"
-          fill="white"
+          fill={color}
           viewBox="0 0 100 80"
           width="75"
           height="75"
@@ -58,7 +63,7 @@ const Sidebar = () => {
           </div>
         </ul>
         <div className="absolute bottom-0 w-full lg:-ml-10 md:-ml-6 -ml-6">
-        <Footer />
+          <Footer />
         </div>
       </div>
     </>
