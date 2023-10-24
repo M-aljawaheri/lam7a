@@ -5,13 +5,14 @@ import RootLayout from './layout'
 import Slider from './components/slider';
 import Header from './components/header';
 import Notices from './components/notices';
+import Sidebar from './components/sidebar';
 
 
 export default function Page() {
   return (
     <RootLayout>
       <div className="relative">
-        {/* <Sidebar /> */}
+        <Sidebar />
         <Header />
         <div className="flex flex-col h-max py-1 lg:pb-3.5 lg:pt-8 lg:px-20 bg-customOrange">
           <h4 className="text-white text-7xl text-center font-['Brush_Script_MT']" >Magazine Archive</h4>
