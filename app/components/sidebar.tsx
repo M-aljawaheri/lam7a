@@ -38,7 +38,7 @@ const Sidebar = () => {
       )}
 
       <div
-        className={`top-0 left-0 lg:w-[20vw] md:w-[30vw] w-[40vw] bg-customOrange p-6 shadow-xl lg:p-10 text-left text-white fixed h-full z-40  ease-in-out duration-400 ${showSidebar ? "-translate-x-0 " : "-translate-x-[200%]"
+        className={`top-0 left-0 lg:w-[20vw] md:w-[30vw] w-[45vw] bg-customOrange p-6 shadow-xl lg:p-10 text-left text-white fixed h-full z-40  ease-in-out duration-400 ${showSidebar ? "-translate-x-0 " : "-translate-x-[200%]"
           }`}
       >
         <ul className="mt-10 max-w-max lg:mt-20 text-xl md:text-2xl lg:text-3xl">
@@ -49,14 +49,11 @@ const Sidebar = () => {
           <div className="relative group max-w-max lg:mt-10 mt-4 duration-300 hover:-translate-y-1">
             <a href="/team">Team</a>{underline}
           </div>
-          <div className="relative group max-w-max lg:mt-10 mt-4 duration-300 hover:-translate-y-1">
+          {/* <div className="relative group max-w-max lg:mt-10 mt-4 duration-300 hover:-translate-y-1">
             <a href="/notices">Notices</a>{underline}
-          </div>
+          </div> */}
           <div className="relative group max-w-max lg:mt-10 mt-4 duration-300 hover:-translate-y-1">
             <a href="/gallery">Photo Gallery</a>{underline}
-          </div>
-          <div className="relative group max-w-max lg:mt-10 mt-4 duration-300 hover:-translate-y-1">
-            <a href="/contact">Contact Us</a>{underline}
           </div>
         </ul>
 
