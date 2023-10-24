@@ -1,7 +1,6 @@
 "use client";
 import Image from 'next/image'
 import RootLayout from './layout'
-// import Sidebar from './sidebar';
 import Slider from './components/slider';
 import Header from './components/header';
 import Notices from './components/notices';
@@ -31,13 +30,13 @@ export default function Page() {
               <h4 className='text-[#ABB68C] text-7xl text-center mb-[5%] font-["Brush_Script_MT"]'>Photo Gallery</h4>
               <div className='view-more-parent w-[75%] h-[75%] relative'>
                 <Image
-                  className="overflow-hidden dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
+                  className="overflow-hidden dark:drop-shadow-[0_0_0.3rem_#ffffff70] rounded-[10%]"
                   src="/gallery-prev.jpg"
                   alt="Image"
                   width={1500}
                   height={1500}
                 />
-                <div className='view-more-overlay'></div>
+                <a href='/gallery' className='rounded-[10%] view-more-overlay cursor-pointer'></a>
                 <div className="view-more absolute w-[100%] text-center cursor-pointer top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
                   <a href='/gallery' className="font-bold text-3xl text-white">View More</a>
                 </div>
