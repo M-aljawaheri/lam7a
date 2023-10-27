@@ -9,7 +9,7 @@ export const images: CustomImage[] = [
     src: "/pics/img139.jpg",
     original: "/pics/img139.jpg",
     width: 1210,
-    height: 1613,
+    height: 1612,
     caption: "",
   },
   {
