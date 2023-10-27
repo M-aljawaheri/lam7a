@@ -5,11 +5,11 @@ interface SidebarProps {
   color?: string;
 }
 
-const Sidebar : React.FC<SidebarProps> = ({color}) => {
+const Sidebar: React.FC<SidebarProps> = ({ color }) => {
   if (!color) color = 'white';
   const [showSidebar, setShowSidebar] = useState(false);
   const underline =
-    <div className="opacity-0 group-hover:opacity-100 after:absolute after:-bottom-2 after:h-1 after:right-0 after:-z-10 after:h-2 after:w-full after:-translate-y-2 after:bg-white after:content-['']">
+    <div className="opacity-0 group-hover:opacity-100 after:absolute after:-bottom-2 after:h-1 after:right-0 after:-z-10 after:w-full after:-translate-y-2 after:bg-white after:content-['']">
     </div>;
   return (
     <>
