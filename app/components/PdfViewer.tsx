@@ -50,7 +50,7 @@ const MagazineExample: React.FC<MagazineExampleProps> = ({ fileUrl }) => {
                 <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
                     <Viewer
                         defaultScale={SpecialZoomLevel.PageFit}
-                        scrollMode={ScrollMode.Page}
+                        scrollMode={ScrollMode.Vertical}
                         viewMode={ViewMode.DualPageWithCover}
                         fileUrl={fileUrl}
                         plugins={[pageNavigationPluginInstance, thumbnailPluginInstance]}
