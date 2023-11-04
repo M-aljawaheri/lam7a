@@ -66,3 +66,7 @@ body {
 .view-more-parent:hover .view-more-overlay{
   opacity: 30%;
 }
+
+.react-multiple-carousel__arrow {
+  z-index: 2!important;
+}

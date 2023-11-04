@@ -16,8 +16,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-grid-gallery": "^1.0.1-alpha.0",
-    "react-image-lightbox": "^5.1.4",
-    "react-multi-carousel": "^2.8.4"
+    "react-multi-carousel": "^2.8.4",
+    "yet-another-react-lightbox": "^3.14.0"
   },
   "devDependencies": {
     "@types/node": "^20",

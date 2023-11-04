@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         customOrange: '#FD825C',
         customBlue: '#0000ff',
+        customYellow: '#F3C067',
       },
     },
   },
