@@ -5,7 +5,7 @@ import Slider from './components/slider';
 import Header from './components/header';
 import Notices from './components/notices';
 import Sidebar from './components/sidebar';
-
+import Footer from './components/footer_new';
 
 export default function Page() {
   return (
@@ -44,6 +44,7 @@ export default function Page() {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     </RootLayout>
   )
