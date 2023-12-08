@@ -42,7 +42,7 @@ const Slider = () => {
                 className="gd-carousel"
                 dotListClass="custom-dot-list-style hidden"
             >
-                {sliderItems.map((item, index) => {
+                {sliderItems.reverse().map((item, index) => {
                     return (
                         <div className="slider m-3 mr-6 px-4 py-6" key={index}>
                             <a className="pt-2 cursor-pointer" href={`/magazine/${item.link}`} target="_blank">

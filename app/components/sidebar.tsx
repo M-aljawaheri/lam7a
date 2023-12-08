@@ -47,13 +47,13 @@ const Sidebar: React.FC<SidebarProps> = ({ color }) => {
         className={`top-0 left-0 lg:w-[20vw] md:w-[30vw] w-[45vw] bg-customOrange p-6 shadow-xl lg:p-10 text-left text-white fixed h-full z-40  ease-in-out duration-400 ${showSidebar ? "-translate-x-0 " : "-translate-x-[200%]"
           }`}
       >
-        <ul className="relative mt-10 max-w-max lg:mt-20 text-xl md:text-2xl lg:text-3xl">
+        <ul className="relative mt-10 max-w-max lg:mt-20 text-l md:text-xl lg:text-2xl">
           <div className="relative group max-w-max lg:mt-24 mt-16 duration-300 hover:-translate-y-1">
             <a href="/">Home</a>
             {underline}
           </div>
           <div className="relative group max-w-max lg:mt-10 mt-4 duration-300 hover:-translate-y-1">
-            <a href="/team">Team</a>{underline}
+            <a href="/team">Meet the Team</a>{underline}
           </div>
           {/* <div className="relative group max-w-max lg:mt-10 mt-4 duration-300 hover:-translate-y-1">
             <a href="/notices">Notices</a>{underline}
