@@ -26,7 +26,7 @@ export default function Page() {
             <a className='text-[#B22F04] break-normal' href="mailto:lam7a-mag@andrew.cmu.edu" target="_blank" rel="noreferrer">lam7a-mag@andrew.cmu.edu</a>
           </button>
         </SplitScreenComponent>
-        <Gallery />
+        <Gallery pb-5 />
         <FullWidthImage src="/assets/fullcut.jpg" />
         <Footer />
       </div>

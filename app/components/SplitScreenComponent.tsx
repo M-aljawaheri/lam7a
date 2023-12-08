@@ -24,7 +24,7 @@ const SplitScreenComponent: React.FC<SplitScreenComponentProps> = ({ title, isLe
             <Image src={imageSrc} alt="Background" layout="fill" objectFit="cover" className="absolute z-0" />
 
             {/* Overlay */}
-            <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 z-10"></div>
+            <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-30 z-10"></div>
 
 
             {/* Left and Right Content Containers */}
