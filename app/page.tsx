@@ -1,11 +1,12 @@
 "use client";
-import Image from 'next/image'
 import RootLayout from './layout'
 import Slider from './components/slider';
 import Header from './components/header';
-import Notices from './components/notices';
 import Sidebar from './components/sidebar';
 import Footer from './components/footer_new';
+import SplitScreenComponent from './components/SplitScreenComponent';
+import Gallery from './components/Gallery';
+import FullWidthImage from './components/FullWidthImage';
 
 export default function Page() {
   return (
@@ -19,32 +20,15 @@ export default function Page() {
             <Slider />
           </div>
         </div>
-
-        <div className="flex-1 h-[80%] bg-[#ECE5DD] pt-[2%]">
-          <div className="flex items-start flex-wrap h-full justify-center sm:py-1 lg:px-20 lg:pb-3.5 lg:pt-8">
-            <div className='w-full lg:w-1/2  h-full border-solid border-2'>
-              <h4 className='text-customOrange text-7xl text-center font-["Brush_Script_MT"]'>Notices</h4>
-              <Notices/>
-            </div>
-            <div className='w-full lg:w-1/2 h-full border-solid border-2 flex flex-col justify-begin items-center'>
-              <h4 className='text-[#ABB68C] text-7xl text-center mb-[5%] font-["Brush_Script_MT"]'>Photo Gallery</h4>
-              <div className='view-more-parent w-[75%] h-[75%] relative'>
-                <Image
-                  className="overflow-hidden dark:drop-shadow-[0_0_0.3rem_#ffffff70] rounded-[10%]"
-                  src="/gallery-prev.jpg"
-                  alt="Image"
-                  width={1500}
-                  height={1500}
-                />
-                <a href='/gallery' className='rounded-[10%] view-more-overlay cursor-pointer'></a>
-                <div className="view-more absolute w-[100%] text-center cursor-pointer top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                  <a href='/gallery' className="font-bold text-3xl text-white">View More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <Footer/>
+        <SplitScreenComponent title="Issue 9 Submissions by Jan 20" isLeft={false} imageSrc="/assets/bg2.webp">
+          <button className='bg-[#ECE5DD] p-4 font-bold'>
+            <span className='text-black block'>Submit through</span>
+            <a className='text-[#B22F04] break-normal' href="mailto:lam7a-mag@andrew.cmu.edu" target="_blank" rel="noreferrer">lam7a-mag@andrew.cmu.edu</a>
+          </button>
+        </SplitScreenComponent>
+        <Gallery />
+        <FullWidthImage src="/assets/fullcut.jpg" />
+        <Footer />
       </div>
     </RootLayout>
   )
