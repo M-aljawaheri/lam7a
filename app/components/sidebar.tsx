@@ -61,6 +61,9 @@ const Sidebar: React.FC<SidebarProps> = ({ color }) => {
           <div className="relative group max-w-max lg:mt-10 mt-4 duration-300 hover:-translate-y-1">
             <a href="/gallery">Photo Gallery</a>{underline}
           </div>
+          <div className="relative group max-w-max lg:mt-10 mt-4 duration-300 hover:-translate-y-1">
+            <a href="mailto:lam7a-mag@andrew.cmu.edu" target="_blank" rel="noreferrer">Contact Us</a>{underline}
+          </div>
         </ul>
         <div className="absolute bottom-0 w-full lg:-ml-10 md:-ml-6 -ml-6">
           <Footer />

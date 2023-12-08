@@ -6,12 +6,12 @@ function Modal() {
 
     return (
         <>
-            <button
-                onClick={() => setIsOpen(true)}
+            <a
+                href="mailto:lam7a-mag@andrew.cmu.edu" target="_blank" rel="noreferrer"
                 className="px-20 py-6 text-lg md:text-2xl font-bold home-button rounded-[2rem] hover:drop-shadow-2xl hover:text-black/90"
             >
                 Reach out to us!
-            </button>
+            </a>
 
             {isOpen && (
                 <div className="fixed z-10 inset-0 overflow-y-auto flex items-center justify-center">

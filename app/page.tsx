@@ -14,8 +14,8 @@ export default function Page() {
       <div className="relative">
         <Sidebar />
         <Header />
-        <div className="flex flex-col h-max py-1 lg:pb-3.5 lg:pt-8 lg:px-20 bg-customOrange">
-          <h4 className="text-white text-7xl text-center font-['Brush_Script_MT']" >Magazine Archive</h4>
+        <div className="flex flex-col h-max py-1 px-5 lg:pb-3.5 pt-8 lg:pt-8 lg:px-20 bg-customOrange">
+          <h4 className="md:ml-6 text-white text-4xl md:text-7xl font-bold" >Magazine Archive</h4>
           <div className='mt-10'>
             <Slider />
           </div>

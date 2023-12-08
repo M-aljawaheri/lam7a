@@ -3,6 +3,7 @@ import React from 'react';
 function Footer() {
     return (
         <div
+            id="contactus"
             className="w-full flex flex-row items-center"
             style={{ height: '150px', backgroundColor: '#EAB58B' }}
         >
