@@ -16,7 +16,7 @@ export default function Page() {
         <Header />
         <SplitScreenComponent title="Get October Issue in print in Jan 2024" isLeft={true} imageSrc="/assets/otheroct8.png">
           <button className='bg-[#ECE5DD] p-4 font-bold'>
-            <a className='text-[#B22F04] break-normal' href="/magazine/Oct23.pdf">Check It Online Now</a>
+            <a className='text-[#B22F04] text-sm md:text-xl  break-normal' href="/magazine/Oct23.pdf">Check It Online Now</a>
           </button>
         </SplitScreenComponent>
         <div className="flex flex-col h-max py-1 px-5 lg:pb-3.5 pt-8 lg:pt-8 lg:px-20 bg-customOrange">
