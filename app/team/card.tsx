@@ -25,8 +25,8 @@ const Card: React.FC<CardProps> = ({ name, imageUrl, description, classYear, pos
         <div className="z-10 mt-4 rounded-[10%] absolute inset-0 opacity-0 group-hover:opacity-100 bg-[#EAB58B] border-customOrange border-4 text-white flex flex-col items-begin justify-start">
           <h4 className="text-4xl mt-10 mb-2 font-bold text-center text-[#B22F04]">{name}</h4>
           <h4 className="text-2xl italic mb-2 font-bold text-center text-[#B22F04]">{position}</h4>
-          <h4 className="text-2xl mb-5 text-center text-[#B22F04]">@Class of {classYear}</h4>
-          <span className='text-2xl p-10 text-center text-black'>
+          <h4 className="text-2xl md:mb-5 mb-3 text-center text-[#B22F04]">@Class of {classYear}</h4>
+          <span className='text-xl p-10 text-center text-black'>
             {description}
           </span>
         </div>

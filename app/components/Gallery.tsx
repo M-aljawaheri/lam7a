@@ -17,7 +17,7 @@ const Gallery = () => {
         {/* Third Image with Title and Button */}
         <div className="flex-1 max-w-[50%] md:max-w-[25%] flex flex-col items-center md:pr-8">
           <h2 className="text-xl md:text-6xl font-bold my-2">PHOTO GALLERY</h2>
-          <a href='/gallery' className='block text-black w-full text-center bg-[#ECE5DD] p-4 font-bold uppercase'>
+          <a href='/gallery' className='block text-black w-full mb-5 text-center bg-[#ECE5DD] p-4 font-bold uppercase'>
             DISCOVER MORE
           </a>
         </div>
