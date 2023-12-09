@@ -20,6 +20,11 @@ export default function Page() {
             <Slider />
           </div>
         </div>
+        <SplitScreenComponent title="Get October Issue in print in Jan 2024" isLeft={true} imageSrc="/assets/otheroct8.png">
+          <button className='bg-[#ECE5DD] p-4 font-bold'>
+            <a className='text-[#B22F04] break-normal' href="/magazine/Oct23.pdf">Check It Online Now</a>
+          </button>
+        </SplitScreenComponent>
         <SplitScreenComponent title="Issue 9 Submissions by Jan 20" isLeft={false} imageSrc="/assets/bg2.webp">
           <button className='bg-[#ECE5DD] p-4 font-bold'>
             <span className='text-black block'>Submit through</span>

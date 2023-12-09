@@ -11,7 +11,7 @@ export const teamMembers = [
       imageURL: "/assets/team/mary.jpeg",
       position: "Editor in Chief",
       classYear: "2024",
-      description: "Hi! I work on the design and layout of the magazine"
+      description: "Hello, I handle the logistics that bring your favorite monthly magazine to life. From production to delivery, I make sure it reaches you smoothly."
     },
     {
       name: "Hala Al Darbasti",
@@ -22,23 +22,20 @@ export const teamMembers = [
     },
     {
       name: "Maryam Al Ghanim",
-      imageURL: "/assets/placeholder.jpg",
       position: "Operations Chief",
       classYear: "2024",
-      description: ""
+      description: "I ensure every launch of Lamha is the most memorable & engaging"
     },
     {
       name: "Dana Aldisi",
-      imageURL: "/assets/placeholder.jpg",
       position: "Writer/Editor",
       classYear: "2025",
-      description: ""
+      description: "I'm a writer and editor of Lamha for Spring 2023. I look forward to contributing more this year!"
     },
     {
       name: "Deema Al Shirawi",
-      imageURL: "/assets/placeholder.jpg",
       position: "Writer/Editor",
       classYear: "2026",
-      description: ""
+      description: "I just joined Lamha as a writer and editor this semester. Can't wait to contribute more to the magazine"
     }
   ];
