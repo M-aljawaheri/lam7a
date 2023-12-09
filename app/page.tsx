@@ -20,7 +20,7 @@ export default function Page() {
             <Slider />
           </div>
         </div>
-        <SplitScreenComponent title="Get October Issue in print in Jan 2024" isLeft={true} imageSrc="/assets/journal8.jpg">
+        <SplitScreenComponent title="Get October Issue in print in Jan 2024" isLeft={true} imageSrc="/assets/otheroct8.png">
           <button className='bg-[#ECE5DD] p-4 font-bold'>
             <a className='text-[#B22F04] break-normal' href="/magazine/Oct23.pdf">Check It Online Now</a>
           </button>
