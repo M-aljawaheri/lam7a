@@ -33,9 +33,9 @@ export const teamMembers = [
       description: "I'm a writer and editor of Lamha for Spring 2023. I look forward to contributing more this year!"
     },
     {
-      name: "Deema Al Shirawi",
+      name: "Dema Al Shirawi",
       position: "Writer/Editor",
       classYear: "2026",
-      description: "I just joined Lamha as a writer and editor this semester. Can't wait to contribute more to the magazine"
+      description: "Heyy! I love reading and writing and I'm in charge of editing and writing some of the amazing content in the magazine"
     }
   ];
