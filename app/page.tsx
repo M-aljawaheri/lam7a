@@ -14,7 +14,7 @@ export default function Page() {
       <div className="relative">
         <Sidebar />
         <Header />
-        <SplitScreenComponent title="Get October Issue in print in Jan 2024" isLeft={true} imageSrc="/assets/otheroct8.png">
+        <SplitScreenComponent title="Get a copy of October Issue on Jan 17" location='left' imageSrc="/assets/otheroct8.png">
           <button className='bg-[#ECE5DD] p-4 font-bold'>
             <a className='text-[#B22F04] text-sm md:text-xl  break-normal' href="/magazine/Oct23.pdf">Check It Online Now</a>
           </button>
@@ -25,7 +25,12 @@ export default function Page() {
             <Slider />
           </div>
         </div>
-        <SplitScreenComponent title="Issue 9 Submissions by Jan 20" isLeft={false} imageSrc="/assets/bg2.webp">
+        <SplitScreenComponent title="join&nbsp;our&nbsp;team -&nbsp;operations, design,&nbsp;editor" location='center' imageSrc="/assets/bgForm.jpg">
+          <button className='bg-[#ECE5DD] p-4 font-bold'>
+            <a className='text-black underline uppercase md:text-2xl text-md' href="https://forms.gle/YyHKi7vWeR6jYPmM6" target="_blank" rel="noreferrer">Sign&nbsp;Up&nbsp;Here</a>
+          </button>
+        </SplitScreenComponent>
+        <SplitScreenComponent title="Issue 9 Submissions by Jan 25" location='right' imageSrc="/assets/bg2.webp">
           <button className='bg-[#ECE5DD] p-4 font-bold'>
             <span className='text-black block'>Submit through</span>
             <a className='text-[#B22F04] break-normal' href="mailto:lam7a-mag@andrew.cmu.edu" target="_blank" rel="noreferrer">lam7a-mag@andrew.cmu.edu</a>
