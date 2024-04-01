@@ -14,9 +14,9 @@ export default function Page() {
       <div className="relative">
         <Sidebar />
         <Header />
-        <SplitScreenComponent title="Get a copy of October Issue on Jan 17" location='left' imageSrc="/assets/otheroct8.png">
+        <SplitScreenComponent title="Get a copy of January Issue" location='left' imageSrc="/assets/otherJan24.jpg">
           <button className='bg-[#ECE5DD] p-4 font-bold'>
-            <a className='text-[#B22F04] text-sm md:text-xl  break-normal' href="/magazine/Oct23.pdf">Check It Online Now</a>
+            <a className='text-[#B22F04] text-sm md:text-xl  break-normal' href="/magazine/Jan24.pdf">Check It Online Now</a>
           </button>
         </SplitScreenComponent>
         <div className="flex flex-col h-max py-1 px-5 lg:pb-3.5 pt-8 lg:pt-8 lg:px-20 bg-customOrange">
