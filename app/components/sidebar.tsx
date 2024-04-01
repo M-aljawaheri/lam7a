@@ -55,9 +55,6 @@ const Sidebar: React.FC<SidebarProps> = ({ color }) => {
           <div className="relative group max-w-max lg:mt-10 mt-4 duration-300 hover:-translate-y-1">
             <a href="/team">Meet the Team</a>{underline}
           </div>
-          {/* <div className="relative group max-w-max lg:mt-10 mt-4 duration-300 hover:-translate-y-1">
-            <a href="/notices">Notices</a>{underline}
-          </div> */}
           <div className="relative group max-w-max lg:mt-10 mt-4 duration-300 hover:-translate-y-1">
             <a href="/gallery">Photo Gallery</a>{underline}
           </div>
