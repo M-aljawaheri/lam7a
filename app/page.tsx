@@ -14,7 +14,7 @@ export default function Page() {
       <div className="relative">
         <Sidebar />
         <Header />
-        <SplitScreenComponent title="Get a copy of January Issue" location='left' imageSrc="/assets/otherJan24.jpg">
+        <SplitScreenComponent title="Get a copy of January Issue" location='left' imageSrc="/assets/other.jpg">
           <button className='bg-[#ECE5DD] p-4 font-bold'>
             <a className='text-[#B22F04] text-sm md:text-xl  break-normal' href="/magazine/Jan24.pdf">Check It Online Now</a>
           </button>
