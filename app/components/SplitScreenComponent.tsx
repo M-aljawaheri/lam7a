@@ -33,7 +33,7 @@ const SplitScreenComponent: React.FC<SplitScreenComponentProps> = ({
 
   const innerElement = (
     <div className="z-10 flex flex-col justify-center items-center w-1/2 p-8 text-center">
-      <h1 className="z-20 uppercase text-white lg:text-8xl text-4xl font-bold mb-4">
+      <h1 className="z-20 uppercase text-white lg:text-8xl text-4xl font-bold mb-4 drop-shadow-xl">
         {title}
       </h1>
       {children}
