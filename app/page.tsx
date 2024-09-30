@@ -14,9 +14,9 @@ export default function Page() {
       <div className="relative">
         <Sidebar />
         <Header />
-        <SplitScreenComponent title="Get a copy of the 10th issue" location='right' imageSrc="/assets/bg-wrapped.png">
+        <SplitScreenComponent title="Get a copy of the 11th issue" location='right' imageSrc="/assets/bg-wrapped.png">
           <button className='bg-[#ECE5DD] p-4 font-bold'>
-            <a className='text-[#B22F04] text-sm md:text-xl  break-normal' href="/magazine/Feb24.pdf">Check It Online Now</a>
+            <a className='text-[#B22F04] text-sm md:text-xl  break-normal' href="/magazine/issue11.pdf">Check It Online Now</a>
           </button>
         </SplitScreenComponent>
         <div className="flex flex-col h-max py-1 px-5 lg:pb-3.5 pt-8 lg:pt-8 lg:px-20 bg-customOrange">
@@ -30,7 +30,7 @@ export default function Page() {
             <a className='text-black underline uppercase md:text-2xl text-md' href="https://forms.gle/YyHKi7vWeR6jYPmM6" target="_blank" rel="noreferrer">Sign&nbsp;Up&nbsp;Here</a>
           </button>
         </SplitScreenComponent>
-        <SplitScreenComponent title="Issue 9 Submissions by Jan 25" location='right' imageSrc="/assets/bg2.webp">
+        <SplitScreenComponent title="Issue 12 Submissions" location='right' imageSrc="/assets/bg2.webp">
           <button className='bg-[#ECE5DD] p-4 font-bold'>
             <span className='text-black block'>Submit through</span>
             <a className='text-[#B22F04] break-normal' href="mailto:lam7a-mag@andrew.cmu.edu" target="_blank" rel="noreferrer">lam7a-mag@andrew.cmu.edu</a>
