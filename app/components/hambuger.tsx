@@ -9,7 +9,7 @@ const HamburgerButton: React.FC<ButtonComponentProps> = ({ onButtonClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
   const handleButtonClick = () => {
-    setIsOpen(prevState => {
+    setIsOpen((prevState) => {
       onButtonClick(!prevState); // Notify the parent about the button state
       return !prevState;
     });
