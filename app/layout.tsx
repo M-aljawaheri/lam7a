@@ -22,6 +22,7 @@ export default function RootLayout({
           name="keywords"
           content="CMUQ, Student Magazine, Lam7a, Qatar, University, News, Stories"
         />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className={montserrat.className}>
         {children}
