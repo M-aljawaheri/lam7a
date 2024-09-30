@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import Footer from "./footer";
 // TODO Fix the mobile view. It is not great at all.

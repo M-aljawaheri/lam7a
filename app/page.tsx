@@ -1,4 +1,3 @@
-"use client";
 import RootLayout from "./layout";
 import Slider from "./components/slider";
 import Header from "./components/header";
