@@ -10,8 +10,8 @@ function Header() {
     >
       <Image
         className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] mb-4 lg:-mt-36"
-        src="/logo.webp"
-        alt="Lam7a"
+        src="/lam7a-logo.webp"
+        alt="Lam7a logo - CMU-Qatar Student Magazine"
         width={948}
         height={380}
         priority
