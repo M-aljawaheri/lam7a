@@ -11,7 +11,8 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico", // Path to the favicon in public folder
   },
-  keywords: "CMUQ, Student Magazine, Lam7a, Qatar, University, News, Stories",
+  keywords:
+    "CMUQ, CMU, cmu, cmuq, cmu qatar, cmuq qatar, Student Magazine, Lam7a, Qatar, University, News, Stories",
 };
 
 export default function RootLayout({
