@@ -14,14 +14,14 @@ export default function Page() {
         <Sidebar />
         <Header />
         <SplitScreenComponent
-          title="Get a copy of the 11th issue"
+          title="Get a copy of the 12th issue"
           location="right"
           imageSrc="/assets/bg-wrapped.png"
         >
           <button className="bg-[#ECE5DD] p-4 font-bold">
             <a
               className="text-[#B22F04] text-sm md:text-xl  break-normal"
-              href="/magazine/issue11.pdf"
+              href="/magazine/issue12.pdf"
             >
               Check It Online Now
             </a>
@@ -35,6 +35,7 @@ export default function Page() {
             <Slider />
           </div>
         </div>
+        {/*
         <SplitScreenComponent
           title="join&nbsp;our&nbsp;team -&nbsp;operations, design,&nbsp;editor"
           location="center"
@@ -51,8 +52,9 @@ export default function Page() {
             </a>
           </button>
         </SplitScreenComponent>
+        */}
         <SplitScreenComponent
-          title="Issue 12 Submissions"
+          title="Issue 13 October Submissions"
           location="right"
           imageSrc="/assets/bg2.webp"
         >
