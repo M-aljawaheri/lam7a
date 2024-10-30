@@ -5,6 +5,10 @@ type SliderImage = {
 
 export const sliderItems: SliderImage[] = [
   {
+    image: "/journals/issue12.jpg",
+    link: "issue12.pdf",
+  },
+  {
     image: "/journals/issue11.jpg",
     link: "issue11.pdf",
   },
