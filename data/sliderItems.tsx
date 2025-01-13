@@ -1,3 +1,7 @@
+// TODO: This model really should be
+// issue
+// month
+
 type SliderImage = {
   image: string;
   link: string;

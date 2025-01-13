@@ -51,15 +51,15 @@ function Modal() {
                 height="40px"
                 viewBox="-18.66 -18.66 223.93 223.93"
                 stroke="#fff"
-                stroke-width="0.0018661000000000003"
+                strokeWidth="0.0018661000000000003"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   stroke="#CCCCCC"
-                  stroke-width="1.11966"
+                  strokeWidth="1.11966"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
@@ -87,11 +87,11 @@ function Modal() {
                 viewBox="0 0 184.591 184.591"
                 stroke="#fff"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
