@@ -1,16 +1,26 @@
 import { Journal } from "./definitions";
 
+/**
+ * Extracts the numerical ID from the Journal item's name.
+ * @param item - The Journal item.
+ * @returns The extracted ID as a number, or null if extraction fails.
+ */
 export const extractId = (item: Journal): number | null => {
-  const extractIdFromImage = (image: string): number | null => {
-    const regex = /issue(\d+)/;
-    const match = image.match(regex);
+  const extractIdFromName = (name: string): number | null => {
+    const regex = /issue(\d+)/i; // Added 'i' flag for case-insensitivity
+    const match = name.match(regex);
     return match ? parseInt(match[1], 10) : null;
   };
 
-  let id = extractIdFromImage(item.name);
+  const id = extractIdFromName(item.name);
   return id;
 };
 
+/**
+ * Finds the maximum ID among a list of Journal items.
+ * @param items - An array of Journal items.
+ * @returns The highest ID found, or 0 if no valid IDs are present.
+ */
 export const findMaxId = (items: Journal[]): number => {
   return items.reduce((max, item) => {
     const id = extractId(item);

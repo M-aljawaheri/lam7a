@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import { Journal } from "../lib/definitions";
+import { extractId } from "../lib/util";
 
 const responsive = {
   desktop: {
@@ -32,6 +33,9 @@ interface SliderProps {
 }
 
 const Slider = async ({ sliderItems }: SliderProps) => {
+  // sort them from latest to oldest (descending)
+  const slides = sliderItems.sort((a, b) => extractId(b) - extractId(a));
+
   return (
     <div className="parent">
       <Carousel
@@ -46,7 +50,7 @@ const Slider = async ({ sliderItems }: SliderProps) => {
         className="gd-carousel"
         dotListClass="custom-dot-list-style hidden"
       >
-        {sliderItems.map((item, index) => {
+        {slides.map((item, index) => {
           return (
             <div className="slider m-3 mr-6 px-4 py-6" key={index}>
               <a
