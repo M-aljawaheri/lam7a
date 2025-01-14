@@ -1,59 +1,80 @@
-// TODO: This model really should be
-// issue
-// month
+import { Journal } from "@/app/lib/definitions";
 
-type SliderImage = {
-  image: string;
-  link: string;
-};
+// Define base URLs for images and PDFs
+const BASE_IMAGE_URL = "https://web2.qatar.cmu.edu/~mjawaher/lam7a/covers/";
+const BASE_PDF_URL = "https://web2.qatar.cmu.edu/~mjawaher/lam7a/journals/";
 
-export const sliderItems: SliderImage[] = [
+export const sliderItems: Journal[] = [
   {
-    image: "/journals/issue12.jpg",
-    link: "issue12.pdf",
+    name: "Issue12",
+    imageurl: `${BASE_IMAGE_URL}issue12.jpg`,
+    pdfurl: `${BASE_PDF_URL}issue12.pdf`,
+    month: "September",
   },
   {
-    image: "/journals/issue11.jpg",
-    link: "issue11.pdf",
+    name: "Issue11",
+    imageurl: `${BASE_IMAGE_URL}issue11.jpg`,
+    pdfurl: `${BASE_PDF_URL}issue11.pdf`,
+    month: "August",
   },
   {
-    image: "/journals/issue10.jpg",
-    link: "issue10.pdf",
+    name: "Issue10",
+    imageurl: `${BASE_IMAGE_URL}issue10.jpg`,
+    pdfurl: `${BASE_PDF_URL}issue10.pdf`,
+    month: "March",
   },
   {
-    image: "/journals/issue9.jpg",
-    link: "issue9.pdf",
+    name: "Issue9",
+    imageurl: `${BASE_IMAGE_URL}issue9.jpg`,
+    pdfurl: `${BASE_PDF_URL}issue9.pdf`,
+    month: "January",
   },
   {
-    image: "/journals/issue8.png",
-    link: "issue8.pdf",
+    name: "Issue8",
+    imageurl: `${BASE_IMAGE_URL}issue8.png`,
+    pdfurl: `${BASE_PDF_URL}issue8.pdf`,
+    month: "October",
   },
   {
-    image: "/journals/issue7.jpg",
-    link: "issue7.pdf",
+    name: "Issue7",
+    imageurl: `${BASE_IMAGE_URL}issue7.jpg`,
+    pdfurl: `${BASE_PDF_URL}issue7.pdf`,
+    month: "September",
   },
   {
-    image: "/journals/issue6.jpg",
-    link: "issue6.pdf",
+    name: "Issue6",
+    imageurl: `${BASE_IMAGE_URL}issue6.jpg`,
+    pdfurl: `${BASE_PDF_URL}issue6.pdf`,
+    month: "March",
   },
   {
-    image: "/journals/issue5.jpg",
-    link: "issue5.pdf",
+    name: "Issue5",
+    imageurl: `${BASE_IMAGE_URL}issue5.jpg`,
+    pdfurl: `${BASE_PDF_URL}issue5.pdf`,
+    month: "February",
   },
   {
-    image: "/journals/issue4.jpg",
-    link: "issue4.pdf",
+    name: "Issue4",
+    imageurl: `${BASE_IMAGE_URL}issue4.jpg`,
+    pdfurl: `${BASE_PDF_URL}issue4.pdf`,
+    month: "January",
   },
   {
-    image: "/journals/issue3.jpg",
-    link: "issue3.pdf",
+    name: "Issue3",
+    imageurl: `${BASE_IMAGE_URL}issue3.jpg`,
+    pdfurl: `${BASE_PDF_URL}issue3.pdf`,
+    month: "October",
   },
   {
-    image: "/journals/issue2.jpg",
-    link: "issue2.pdf",
+    name: "Issue2",
+    imageurl: `${BASE_IMAGE_URL}issue2.jpg`,
+    pdfurl: `${BASE_PDF_URL}issue2.pdf`,
+    month: "September",
   },
   {
-    image: "/journals/issue1.jpg",
-    link: "issue1.pdf",
+    name: "Issue1",
+    imageurl: `${BASE_IMAGE_URL}issue1.jpg`,
+    pdfurl: `${BASE_PDF_URL}issue1.pdf`,
+    month: "August",
   },
 ];

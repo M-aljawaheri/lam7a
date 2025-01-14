@@ -7,39 +7,12 @@ import SplitScreenComponent from "./components/SplitScreenComponent";
 import Gallery from "./components/Gallery";
 import FullWidthImage from "./components/FullWidthImage";
 import { fetchJournals } from "./lib/data";
-import { Journal } from "./lib/definitions";
-
-const extractId = (item: Journal): number | null => {
-  const extractIdFromImage = (image: string): number | null => {
-    const regex = /issue(\d+)\.jpg$/;
-    const match = image.match(regex);
-    return match ? parseInt(match[1], 10) : null;
-  };
-
-  let id = extractIdFromImage(item.image);
-  return id;
-};
-
-const findMaxId = (items: Journal[]): number => {
-  return items.reduce((max, item) => {
-    const id = extractId(item);
-    if (id !== null && id > max) {
-      return id;
-    }
-    return max;
-  }, 0); // Initialize max as 0 or any other starting value
-};
+import { findMaxId, ordinal } from "./lib/util";
 
 export default async function Page() {
   const sliderItems = await fetchJournals();
   const maxId = findMaxId(sliderItems);
   // this is a magic one liner (chatgpt :-) to convert issue number to 1st / 2nd / 35th / etc ordinal
-  const ordinal = (n) =>
-    `${n}${
-      n % 100 >= 11 && n % 100 <= 13
-        ? "th"
-        : ["th", "st", "nd", "rd"][Math.min(n % 10, 4)] || "th"
-    }`;
 
   return (
     <RootLayout>
