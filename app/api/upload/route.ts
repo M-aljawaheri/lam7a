@@ -1,12 +1,14 @@
+/** @type {import('next').NextConfig} */
 import { NextResponse } from "next/server";
 import { fetchJournals, insertJournal } from "@/app/lib/data";
 import { findMaxId } from "@/app/lib/util";
 
 export const revalidate = 0;
-export const config = {
-  api: {
-    bodyParser: {
-      sizeLimit: "100mb",
+
+module.exports = {
+  experimental: {
+    serverActions: {
+      bodySizeLimit: "80mb",
     },
   },
 };
