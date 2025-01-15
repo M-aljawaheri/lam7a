@@ -1,8 +1,8 @@
-// app/api/upload/route.ts
-
 import { NextResponse } from "next/server";
 import { fetchJournals, insertJournal } from "@/app/lib/data";
 import { findMaxId } from "@/app/lib/util";
+
+export const revalidate = 0;
 
 /**
  * Handles the POST request to upload a PDF and insert a new journal entry.

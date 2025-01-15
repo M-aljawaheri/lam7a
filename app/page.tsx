@@ -9,6 +9,8 @@ import FullWidthImage from "./components/FullWidthImage";
 import { fetchJournals } from "./lib/data";
 import { findMaxId, ordinal } from "./lib/util";
 
+export const revalidate = 0;
+
 export default async function Page() {
   const sliderItems = await fetchJournals();
   const maxId = findMaxId(sliderItems);

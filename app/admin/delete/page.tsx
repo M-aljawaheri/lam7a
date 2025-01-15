@@ -4,6 +4,8 @@ import { Journal } from "@/app/lib/definitions";
 import { extractId } from "@/app/lib/util";
 import { ToastContainer } from "react-toastify";
 
+export const revalidate = 0;
+
 const DeletePage = async () => {
   // fetch journals here server side
   let journals: Journal[] = [];
