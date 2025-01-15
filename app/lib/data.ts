@@ -61,7 +61,7 @@ export const uploadToAFS = async (
       imageUrl,
       pdfUrl,
     };
-  } catch (error: unknown) {
+  } catch (error: any) {
     console.error("Detailed error:", error);
     if (error.message) console.error("Error message:", error.message);
     if (error.code) console.error("Error code:", error.code);

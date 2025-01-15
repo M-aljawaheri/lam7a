@@ -5,11 +5,11 @@ import { Journal } from "./definitions";
  * @param item - The Journal item.
  * @returns The extracted ID as a number, or null if extraction fails.
  */
-export const extractId = (item: Journal): number | null => {
-  const extractIdFromName = (name: string): number | null => {
+export const extractId = (item: Journal): number => {
+  const extractIdFromName = (name: string): number => {
     const regex = /issue(\d+)/i; // Added 'i' flag for case-insensitivity
     const match = name.match(regex);
-    return match ? parseInt(match[1], 10) : null;
+    return match ? parseInt(match[1], 10) : -1;
   };
 
   const id = extractIdFromName(item.name);

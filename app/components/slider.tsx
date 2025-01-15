@@ -32,7 +32,7 @@ interface SliderProps {
   sliderItems: Journal[];
 }
 
-const Slider = async ({ sliderItems }: SliderProps) => {
+const Slider = ({ sliderItems }: SliderProps) => {
   // sort them from latest to oldest (descending)
   const slides = sliderItems.sort((a, b) => extractId(b) - extractId(a));
 
