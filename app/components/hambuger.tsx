@@ -1,9 +1,8 @@
 "use client";
 import { useState } from "react";
 
-// Define the props for ButtonComponent
 interface ButtonComponentProps {
-  onButtonClick: (buttonState: boolean) => void; // Prop to notify the parent about the button state
+  onButtonClick: (buttonState: boolean) => void;
 }
 
 const HamburgerButton: React.FC<ButtonComponentProps> = ({ onButtonClick }) => {
@@ -11,7 +10,7 @@ const HamburgerButton: React.FC<ButtonComponentProps> = ({ onButtonClick }) => {
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
   const handleButtonClick = () => {
     setIsOpen((prevState) => {
-      onButtonClick(!prevState); // Notify the parent about the button state
+      onButtonClick(!prevState); // notify parent
       return !prevState;
     });
   };

@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { deleteJournalByName } from "@/app/lib/data"; // Adjust the import path as needed
+import { deleteJournalByName } from "@/app/lib/data";
 
 export async function POST(req: NextRequest) {
   try {
-    // Parse the request body
+    // parse body
     const { name } = await req.json();
 
     if (!name) {
@@ -13,9 +13,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Perform the deletion
     const success = await deleteJournalByName(name as string);
-
     if (success) {
       return NextResponse.json(
         { message: "Journal deleted successfully." },

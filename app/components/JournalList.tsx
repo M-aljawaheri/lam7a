@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import JournalDeleteCard from "@/app/components/JournalDeleteCard";
 import { Journal } from "@/app/lib/definitions";
-import { toast } from "react-toastify"; // Optional: For user feedback
+import { toast } from "react-toastify";
 
 interface JournalListProps {
   journals: Journal[];

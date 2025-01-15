@@ -4,13 +4,12 @@ import { Journal } from "@/app/lib/definitions";
 import { ToastContainer } from "react-toastify";
 
 const DeletePage = async () => {
-  // Fetch journals on the server
+  // fetch journals here server side
   let journals: Journal[] = [];
   try {
     journals = await fetchJournals();
   } catch (error) {
     console.error("Failed to fetch journals:", error);
-    // Optionally, handle the error by showing a message or redirecting
   }
 
   return (

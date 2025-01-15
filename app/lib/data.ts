@@ -51,7 +51,7 @@ export const deleteJournalByName = async (name: string): Promise<boolean> => {
         RETURNING *;
       `;
 
-    if (result !== null && result.rowCount > 0) {
+    if (result !== null && result.rowCount !== null && result.rowCount > 0) {
       return true;
     } else {
       console.warn(`No journal found with name: ${name}`);
