@@ -45,11 +45,10 @@ const SplitScreenComponent: React.FC<SplitScreenComponentProps> = ({
       <Image
         src={imageSrc}
         alt="Background"
-        layout="fill"
-        objectFit="cover"
+        fill
+        style={{ objectFit: "cover" }}
         className="absolute z-0"
       />
-
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-30 z-10"></div>
 
       <div className="z-20 flex md:flex-row flex-col h-full bg-black bg-opacity-20">
