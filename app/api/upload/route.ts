@@ -3,6 +3,13 @@ import { fetchJournals, insertJournal } from "@/app/lib/data";
 import { findMaxId } from "@/app/lib/util";
 
 export const revalidate = 0;
+export const config = {
+  api: {
+    bodyParser: {
+      sizeLimit: "100mb",
+    },
+  },
+};
 
 /**
  * Handles the POST request to upload a PDF and insert a new journal entry.
