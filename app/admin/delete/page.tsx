@@ -1,6 +1,7 @@
 import JournalList from "@/app/components/JournalList";
 import { fetchJournals } from "@/app/lib/data";
 import { Journal } from "@/app/lib/definitions";
+import { extractId } from "@/app/lib/util";
 import { ToastContainer } from "react-toastify";
 
 const DeletePage = async () => {
@@ -8,6 +9,7 @@ const DeletePage = async () => {
   let journals: Journal[] = [];
   try {
     journals = await fetchJournals();
+    journals = journals.sort((a, b) => extractId(b) - extractId(a));
   } catch (error) {
     console.error("Failed to fetch journals:", error);
   }

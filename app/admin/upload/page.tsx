@@ -9,6 +9,7 @@ import React, { useState } from "react";
 const UploadPage = () => {
   const [month, setMonth] = useState("");
   const [pdf, setPdf] = useState<File | null>(null);
+  const [cover, setCover] = useState<File | null>(null);
   const [message, setMessage] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -20,8 +21,8 @@ const UploadPage = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevents the default form submission behavior
 
-    if (!pdf) {
-      setMessage("Please select a PDF file to upload.");
+    if (!pdf || !cover) {
+      setMessage("Please select a PDF file and JPG cover page to upload.");
       return;
     }
 
@@ -30,6 +31,7 @@ const UploadPage = () => {
 
     const formData = new FormData();
     formData.append("pdf", pdf);
+    formData.append("cover", cover);
     formData.append("month", month);
 
     fetch("/api/upload", {
@@ -49,9 +51,14 @@ const UploadPage = () => {
         setMessage(data.message || "Journal uploaded successfully.");
         setMonth("");
         setPdf(null);
+        setCover(null);
         // Reset the file input value
         const fileInput = document.getElementById("pdf") as HTMLInputElement;
         if (fileInput) {
+          fileInput.value = "";
+        }
+        const coverInput = document.getElementById("cover") as HTMLInputElement;
+        if (coverInput) {
           fileInput.value = "";
         }
       })
@@ -107,6 +114,28 @@ const UploadPage = () => {
             onChange={(e) => {
               if (e.target.files && e.target.files[0]) {
                 setPdf(e.target.files[0]);
+              }
+            }}
+            required
+            className="w-full text-white"
+          />
+        </div>
+
+        {/* JPG cover Upload */}
+        <div className="mb-6">
+          <label
+            htmlFor="cover"
+            className="block text-sm font-medium text-white mb-2"
+          >
+            Select Cover JPG
+          </label>
+          <input
+            type="file"
+            id="cover"
+            accept="application/jpg"
+            onChange={(e) => {
+              if (e.target.files && e.target.files[0]) {
+                setCover(e.target.files[0]);
               }
             }}
             required

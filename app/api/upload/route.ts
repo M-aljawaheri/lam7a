@@ -13,10 +13,14 @@ export async function POST(request: Request) {
   try {
     const formData = await request.formData();
     const file = formData.get("pdf");
+    const cover = formData.get("cover");
     const month = formData.get("month");
 
-    if (!file || !month) {
-      throw "Invalid input";
+    if (!file || !month || !cover) {
+      return NextResponse.json(
+        { error: "Failed to upload journal, invalid input" },
+        { status: 500 }
+      );
     }
 
     const sliderItems = await fetchJournals();
@@ -24,7 +28,7 @@ export async function POST(request: Request) {
     const entryNum = maxId + 1;
 
     // Insert the new journal entry
-    await insertJournal(entryNum, month as string, file);
+    await insertJournal(entryNum, month as string, file as File, cover as File);
 
     return NextResponse.json(
       { message: "Journal entry inserted successfully." },
